@@ -1,4 +1,6 @@
+import { NavLink, Link } from "react-router-dom"
 import CartWidget from "../CartWidget/CartWidget"
+
 
 
 const NavBar = () => {
@@ -6,12 +8,14 @@ const NavBar = () => {
         <nav class="navbar bg-body-tertiary">
             
             <div class="container-fluid">
+                <Link to='/'>
                 <h2>Harmonys</h2>
-                <button class="btn btn-outline-primary me-2" type="button">Guitarras</button>
-                <button class="btn btn-outline-success me-2" type="button">Bajos</button>
-                <button class="btn btn-outline-danger me-2" type="button">Teclados</button>
-                <CartWidget/>
+                </Link>
+                <NavLink to={`/category/guitarras`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}/>Guitarras
+                <NavLink to={`/category/bajos`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}/>Bajos
+                <NavLink to={`/category/baterias`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}/>Baterias
             </div>
+                <CartWidget/>
             
         </nav>
 
