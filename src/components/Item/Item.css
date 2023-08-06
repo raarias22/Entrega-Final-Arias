@@ -1,0 +1,16 @@
+.CardItem{
+    margin:10px;
+    border: 0.5px solid black;
+}
+
+.footer{
+    background-color: burlywood;
+    border: 0.5px solid black;
+}
+
+.CardItem img{
+    width: 25%;
+}
+    
+
+

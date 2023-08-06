@@ -1,0 +1,10 @@
+.nav-item{
+    width: 250px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-link:hover{
+    border-radius: 50px;
+    background-color: burlywood !important;
+}
+

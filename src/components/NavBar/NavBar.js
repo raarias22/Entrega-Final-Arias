@@ -1,16 +1,17 @@
 import { NavLink, Link } from "react-router-dom"
 import CartWidget from "../CartWidget/CartWidget"
 import logo from "../Assets/img/logo4.png"
+import './NavBar.css'
 
 
 const NavBar = () => {
     return (
       <header className="header">
         <div>
-          <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+          <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
               <Link className="navbar-brand" to="/">
-                <img src={logo} width="50" alt="logo" /> Harmony's Music Store
+                <img src={logo} width="40" alt="logo" /> Harmony's MS
               </Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent"
@@ -37,10 +38,8 @@ const NavBar = () => {
                       Baterias
                     </NavLink>
                   </li>
-                  <li className="nav-item">
-                  <CartWidget />
-                  </li>
                 </ul>
+                <CartWidget />
               </div>
             </div>
           </nav>
