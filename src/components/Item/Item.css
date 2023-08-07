@@ -1,16 +1,22 @@
 .CardItem{
+    text-align: center;
     margin:10px;
     border: 0.5px solid black;
 }
 
 .footer{
-    background-color: burlywood;
+    background-color: rgb(60, 180, 29) !important;
     border: 0.5px solid black;
 }
 
 .CardItem img{
     width: 25%;
 }
-    
+
+.card{
+    margin: 10px;
+}
+
+
 
 

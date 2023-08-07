@@ -5,6 +5,22 @@
 
 .nav-link:hover{
     border-radius: 50px;
-    background-color: burlywood !important;
+    background-color: rgb(60, 180, 29) !important;
 }
+
+.nav-link{
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-brand{
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-brand:hover{
+    background-color: rgb(60, 180, 29) !important;
+    border-radius: 50px;
+}
+
 
