@@ -10,7 +10,7 @@ const NavBar = () => {
       <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <Link className="navbar-brand" to="/">
-            <img src={logo} width="40" color="green" alt="logo" /> Harmony's MS
+            <img src={logo} width="40" color="green" alt="logo" /> ♫♫♫ Harmony's MS
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"

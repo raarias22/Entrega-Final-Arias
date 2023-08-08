@@ -4,7 +4,7 @@
 }
 
 .nav-link:hover{
-    border-radius: 50px;
+    border-radius: 25px;
     background-color: rgb(60, 180, 29) !important;
 }
 
@@ -20,7 +20,7 @@
 
 .navbar-brand:hover{
     background-color: rgb(60, 180, 29) !important;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 

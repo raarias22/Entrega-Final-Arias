@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 const Item = ({ id, name, img, price, stock }) => {
 
     return (
-        <div className="container fluid">
-            <div className='row'>
-                <div className='col-md'>
+        <div className="container text-center">
+            <div className='row align-items-start'>
+                <div className='col'>
                     <div className='card'>
                         <div className='card-body'>
                             <article className="CardItem">
@@ -27,7 +27,6 @@ const Item = ({ id, name, img, price, stock }) => {
                                         <p className="Info">
                                             Stock disponible: {stock}
                                         </p>
-
                                         <Link to={`/item/${id}`} className='Option'>Ver detalle</Link>
                                     </section>
                                 </div>
