@@ -8,6 +8,8 @@ import background from './components/Assets/img/fondo3.jpg'
 import { CartProvider } from './components/Context/CartContext';
 import Cart from './components/Cart/Cart'
 import Checkout from "./components/Checkout/Checkout";
+import { db } from './firebase/config';
+import { getDocs, collection } from 'firebase/firestore';
 
 
 
