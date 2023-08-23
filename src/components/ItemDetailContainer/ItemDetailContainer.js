@@ -7,7 +7,7 @@ import { getDoc, doc } from "firebase/firestore";
 import { db, } from "../../firebase/config";
 
     const ItemDetailContainer = () => {
-        const [product, setProduct] = useState(null)
+        const [products, setProduct] = useState(null)
         const [loading, setLoading] = useState(true)
 
         const { itemId } = useParams()
@@ -20,8 +20,8 @@ import { db, } from "../../firebase/config";
             getDoc(docRef)
             .then(response => {
                 const data = response.data()
-                const productAdapted = {id: response.id, ...data}
-                setProduct(productAdapted)
+                const productsAdapted = {id: response.id, ...data}
+                setProduct(productsAdapted)
             })
             .catch(error => {
                 console.log(error)
@@ -30,6 +30,10 @@ import { db, } from "../../firebase/config";
                 setLoading(false)
             })
         }, [itemId])
+
+        return (
+            <ItemDetail products={products} />
+        )
     }
 
 export default ItemDetailContainer
