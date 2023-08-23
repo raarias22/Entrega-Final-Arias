@@ -27,7 +27,7 @@ const Item = ({ id, name, img, price, stock }) => {
                                         <p className="Info">
                                             Stock disponible: {stock}
                                         </p>
-                                        <Link to={`/item/${id}`} className='Option'>Ver detalle</Link>
+                                        <Link to={`/item/${id}`} className='Option'><button type="button" class="btn btn-info">Ver detalles</button></Link>
                                     </section>
                                 </div>
                             </article>

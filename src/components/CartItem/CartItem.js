@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import { CartContext } from '../Context/CartContext'
+import cart from '../CartWidget/assets/cart.svg';
 import '../CartItem/CartItem.css'
 
 
@@ -9,7 +10,7 @@ function CartItem({id, price, img, title, quantity, category}) {
     return(
         <div className='p-sm-5 d-md-flex flex-md-row p-lg-3 align-items-sm-center gap-lg-5 card bg-light' >
             
-            <img src={img} className='carrito__producto--imag' />
+            <img src={cart} className='carrito__producto--imag' />
             
             <div className='d-lg-flex'>
                 <div className='px-md-3'>
@@ -31,7 +32,7 @@ function CartItem({id, price, img, title, quantity, category}) {
                     </div>
     
                     <div className=" d-flex gap-5 align-items-center">
-                        <div className='d-sm-flex d-lg-block gap-sm-3 '>
+                        <div className='d-sm-flex d-lg-block gap-sm-3'>
                             <small>Cantidad</small>
                             <p className='fw-semibold text-center'> {quantity}</p>
                         </div>
