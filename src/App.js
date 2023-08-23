@@ -6,6 +6,8 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Footer from './components/Footer/Footer';
 import background from './components/Assets/img/fondo3.jpg'
 import { CartProvider } from './components/Context/CartContext';
+import Cart from './components/Cart/Cart'
+import Checkout from "./components/Checkout/Checkout";
 
 
 
@@ -24,7 +26,8 @@ function App() {
             <Route path='/' element={<ItemListContainer />} />
             <Route path='category/:categoryId' element={<ItemListContainer />} />
             <Route path='/item/:itemId' element={<ItemDetailContainer />} />
-            <Route path='*' element={<h1>404 NOT FOUND</h1>} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/ckeckout' element={ <Checkout greeting={ 'Complete el Formulario' }/> } />
           </Routes>
           </CartProvider>
         </BrowserRouter>
