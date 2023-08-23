@@ -1,6 +1,6 @@
 import './Item.css'
 import { Link } from "react-router-dom"
-const Item = ({ Categoría, Descripción, Img, Nombre, Precio, Stock }) => {
+const Item = ({id, Categoría, Descripción, Img, Nombre, Precio, Stock }) => {
 
     return (
         <div className="container text-center">
@@ -27,7 +27,7 @@ const Item = ({ Categoría, Descripción, Img, Nombre, Precio, Stock }) => {
                                         <p className="Info">
                                             Stock disponible: {Stock}
                                         </p>
-                                        <Link to={`/item/$`} className='Option'><button type="button" class="btn btn-info">Ver detalles</button></Link>
+                                        <Link to={`/item/${id}` } className='Option'><button type="button" class="btn btn-info">Ver detalles</button></Link>
                                     </section>
                                 </div>
                             </article>

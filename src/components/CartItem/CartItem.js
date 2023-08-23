@@ -4,7 +4,7 @@ import cart from '../CartWidget/assets/cart.svg';
 import '../CartItem/CartItem.css'
 
 
-function CartItem({id, price, img, title, quantity, category}) {
+function CartItem({id, Precio, img, title, quantity, category}) {
     const {removeItem} = useContext(CartContext)
 
     return(
@@ -23,12 +23,12 @@ function CartItem({id, price, img, title, quantity, category}) {
                 <div className='p-md-3 d-lg-flex gap-lg-3'>
                     <div className=' d-sm-flex d-lg-block gap-3 px-md-2'>
                         <small>Precio</small>
-                        <p className=' fw-semibold'>$ {price}</p>
+                        <p className=' fw-semibold'>$ {Precio}</p>
                     </div>
     
                     <div className=" d-sm-flex d-lg-block gap-3 px-md-2">
                         <small>Subtotal</small>
-                        <p className=' fw-semibold'>$ {price * quantity}</p>
+                        <p className=' fw-semibold'>$ {Precio * quantity}</p>
                     </div>
     
                     <div className=" d-flex gap-5 align-items-center">

@@ -32,7 +32,7 @@ import { db, } from "../../firebase/config";
         }, [itemId])
 
         return (
-            <ItemDetail products={products} />
+            <ItemDetail {...products} />
         )
     }
 
