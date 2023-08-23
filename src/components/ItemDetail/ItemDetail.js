@@ -7,7 +7,9 @@ import './ItemDetail.css'
 
 
 
-const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
+const ItemDetail = ({ id, Nombre, Img, Categoría, Descripción, Precio, Stock}) => {
+
+    console.log(ItemDetail)
 
     const[quantityAdded, setQuantityAdded] = useState(0)
 
@@ -17,7 +19,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
         setQuantityAdded(quantity)
 
         const item = {
-            id, name, price
+            id, Nombre, Precio
         }
 
         addItem(item, quantity)
@@ -27,21 +29,21 @@ const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
         <article className="CardItem">
             <header className="Header">
                 <h2 className="ItemHeader">
-                    {name}
+                    {Nombre}
                 </h2>
             </header>
             <picture>
-                <img src={img} alt={name} className="ItemImg"/>
+                <img src={Img} alt={Nombre} className="ItemImg"/>
             </picture>
             <section>
                 <p className="Info">
-                    Categoria: {category}
+                    Categoria: {Categoría}
                 </p>
                 <p className="Info">
-                    Descripción: {description}
+                    Descripción: {Descripción}
                 </p>
                 <p className="Info">
-                    Precio: ${price}
+                    Precio: ${Precio}
                 </p>
             </section>
             <footer className='ItemFooter'>
@@ -49,7 +51,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
                     quantityAdded > 0 ? (
                         <Link to = '/cart' className="Option"><button type="button" className="btn btn-light">Terminar compra</button></Link>
                     ) : (
-                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
+                        <ItemCount initial={1} Stock={Stock} onAdd={handleOnAdd}/>
                     )
                 }
             </footer>
