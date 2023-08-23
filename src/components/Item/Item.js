@@ -1,6 +1,6 @@
 import './Item.css'
 import { Link } from "react-router-dom"
-const Item = ({ id, name, img, price, stock }) => {
+const Item = ({ Categoría, Descripción, Img, Nombre, Precio, Stock }) => {
 
     return (
         <div className="container text-center">
@@ -12,22 +12,22 @@ const Item = ({ id, name, img, price, stock }) => {
                                 <h4 className='card-title'>
                                     <header className="Header">
                                         <h2 className="ItemHeader">
-                                            {name}
+                                            {Nombre}
                                         </h2>
                                     </header>
                                 </h4>
                                 <picture className="img">
-                                    <img src={img} alt={name} className="ItemImg" />
+                                    <img src={Img} alt={Nombre} className="ItemImg" />
                                 </picture>
                                 <div className='card-text'>
                                     <section className="footer">
                                         <p className="Info">
-                                            Precio: ${price}
+                                            Precio: ${Precio}
                                         </p>
                                         <p className="Info">
-                                            Stock disponible: {stock}
+                                            Stock disponible: {Stock}
                                         </p>
-                                        <Link to={`/item/${id}`} className='Option'><button type="button" class="btn btn-info">Ver detalles</button></Link>
+                                        <Link to={`/item/$`} className='Option'><button type="button" class="btn btn-info">Ver detalles</button></Link>
                                     </section>
                                 </div>
                             </article>
