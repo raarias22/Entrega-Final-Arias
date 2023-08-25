@@ -1,4 +1,5 @@
 import React from "react"
+import '../CheckoutForm/CheckoutForm.css'
 
 
 function CheckoutForm({handleForm, generateOrder, dataForm, errors, validateForm}) {
@@ -26,7 +27,7 @@ return (
       {errors && errors.email && <span className="text-danger me-auto">{errors.email}</span>}
       <input onChange={handleForm} type="text" name='emailConfirm' value={dataForm.emailConfirm} placeholder='Confirme el email'/>
       
-      <button className="btn btn-outline-secondary w-50 mt-2" type="submit">Finalizar Compra</button>
+      <button className="btn btn-outline-primary w-50 mt-2" type="submit">Finalizar Compra</button>
 
     </form>       
   </div>
