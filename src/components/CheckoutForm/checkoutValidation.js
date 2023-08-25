@@ -41,3 +41,5 @@ export const checkoutValidacion = (WrappedComponent) => {
     }
     return CheckoutValidacion
 }
+
+console.log()

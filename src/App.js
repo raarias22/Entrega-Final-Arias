@@ -7,8 +7,7 @@ import Footer from './components/Footer/Footer';
 import background from './components/Assets/img/fondo3.jpg'
 import { CartProvider } from './components/Context/CartContext';
 import Cart from './components/Cart/Cart'
-import CheckoutForm from './components/CheckoutForm/CheckoutForm';
-
+import Checkout from './components/Checkout/Checkout';
 
 
 
@@ -28,7 +27,7 @@ function App() {
             <Route path='category/:categoryId' element={<ItemListContainer />} />
             <Route path='/item/:itemId' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
-            <Route path='/CheckoutForm' element={ <CheckoutForm greeting={ 'Complete el Formulario' }/> } />
+            <Route path='/Checkout' element={ <Checkout greeting={ 'Complete el Formulario' }/> } />
           </Routes>
           </CartProvider>
         </BrowserRouter>

@@ -9,7 +9,7 @@ const CheckoutValidacion = checkoutValidacion(CheckoutForm)
 
 function Checkout({ greeting }) {
 
-        const {cartList, totalBuys, clearCart} = useContext(CartContext)
+        const {cart, clearCart} = useContext(CartContext)
         
         const [ordenId, setOrdenId] = useState(null);
         const [dataForm, setDataForm] = useState({name: '', phone: '', email: '', emailConfirm: ''})
@@ -18,8 +18,8 @@ function Checkout({ greeting }) {
 
             const order = {}
             order.buyer = dataForm;
-            order.items = cartList.map(({ title, id, price, quantity}) => ({id, title, price, quantity}))
-            order.total = totalBuys()
+            order.items = cart.map(({ Nombre, id, Precio, quantity}) => ({id, Nombre, Precio, quantity}))
+            
     
             const dbFirestore = getFirestore()
             const orderCollection = collection (dbFirestore, 'orders')
