@@ -1,3 +1,6 @@
+import React from "react"
+
+
 function CheckoutForm({handleForm, generateOrder, dataForm, errors, validateForm}) {
     const handleOnSubmit = (e) => {
       e.preventDefault()
